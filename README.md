@@ -167,6 +167,18 @@ export CORSANYWHERE_RATELIMIT='50 3 my.example.com my2.example.com'
 node server.js
 ```
 
+### Docker
+
+You also can use the Dockerfile to build your own docker image and start CORS Anywhere server in a container:
+```
+docker build -t cors-anywhere .
+docker run -d -p 8080:8080 --name cors-anywhere  cors-anywhere
+```
+
+Or you can use docker-compose to build and start the CORS Anywhere server in docker:
+```
+docker-compose up -d
+```
 
 ## License
 
